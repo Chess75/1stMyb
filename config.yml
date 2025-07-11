@@ -201,5 +201,4 @@ books:
   DefaultBook: "./engines/Book2.bin"
   BackupBook: "./engines/Book3.bin"
   Third: "./engines/book.bin"
-  BackupBook: "./engines/Book3.bin"
-  Third: "./engines/book.bin"
+
