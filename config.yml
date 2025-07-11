@@ -65,7 +65,7 @@ opening_books:
 #     names:                              # List of names of books to use as black.
 #       - BlackBook
     standard:
-      selection: weighted_random          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+      selection: best_move         # Move selection is one of "weighted_random", "uniform_random" or "best_move".
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
       names:                              # List of names of books to use if there is no specific book for the time control, white, black or chess960.
         - DefaultBook
@@ -90,7 +90,7 @@ online_moves:
 #   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
 #   max_moves: 1                          # Max number of moves played from Lichess opening explorer. (Comment this line for max moves)
   lichess_cloud:
-    enabled: false                        # Activate online moves from Lichess cloud eval.
+    enabled: true                        # Activate online moves from Lichess cloud eval.
     priority: 200                         # Priority with which this move source is used. Higher priority is used first.
     only_without_book: true              # Whether the cloud should only be used if there is no matching book.
     min_eval_depth: 10                    # Minimum evaluation depth.
