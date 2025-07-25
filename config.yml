@@ -69,7 +69,6 @@ opening_books:
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
       names:                              # List of names of books to use if there is no specific book for the time control, white, black or chess960.
         - DefaultBook
-        - BackupBook
         - Third
 #   Use the same pattern for 'bullet', 'blitz', 'rapid', 'classical',
 #   'antichess', 'atomic', 'chess960', 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
@@ -199,6 +198,5 @@ messages:
 
 books:
   DefaultBook: "./engines/Book2.bin"
-  BackupBook: "./engines/Book3.bin"
-  Third: "./engines/book.bin"
+  Third: "./engines/Book3.bin"
 
