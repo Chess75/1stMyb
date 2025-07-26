@@ -98,12 +98,12 @@ online_moves:
 #   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
 #   max_moves: 1                          # Max number of moves played from Lichess cloud eval. (Comment this line for max moves)
   chessdb:
-    enabled: false                        # Activate online moves from https://chessdb.cn/queryc_en/
+    enabled: true                        # Activate online moves from https://chessdb.cn/queryc_en/
     priority: 100                         # Priority with which this move source is used. Higher priority is used first.
     only_without_book: false              # Whether the chessdb should only be used if there is no matching book.
     min_candidates: 5                     # Minimum number of candidate moves.
     min_time: 20                          # Time the bot must have at least to use the online move. +10 seconds in games without increment.
-    timeout: 5                            # Time the server has to respond.
+    timeout: 1                            # Time the server has to respond.
     selection: "best"                     # Move selection is one of "optimal", "best" or "good".
     max_depth: 30                         # Half move max depth. (Comment this line for max depth)
 #   max_moves: 1                          # Max number of moves played from chessdb. (Comment this line for max moves)
@@ -113,7 +113,7 @@ online_moves:
     timeout: 1                            # Time the server has to respond.
 
 offer_draw:
-  enabled: false                           # Activate whether the bot should offer draw.
+  enabled: true                           # Activate whether the bot should offer draw.
   score: 10                               # If the absolute value of the score is less than or equal to this value, the bot offers/accepts draw (in cp)
   consecutive_moves: 10                   # How many moves in a row the absolute value of the score has to be below the draw value
   min_game_length: 35                     # Earliest move in which draw is offered.
