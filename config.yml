@@ -10,7 +10,7 @@ engines:
     uci_options:                          # Arbitrary UCI options passed to the engine. (Commenting allowed)
       Threads: 4                          # Max CPU threads the engine can use.
       Hash: 512                           # Max memory (in megabytes) the engine can allocate.
-      Move Overhead: 220                  # Increase if your bot flags games too often.
+      Move Overhead: 230                  # Increase if your bot flags games too often.
 #  variants:                               # Engine used for variants when no suitable special engine is configured.
 #    dir: "./engines"                      # Directory containing the engine.
 #    name: "fairy-stockfish.exe"               # Binary name of the engine to use.
@@ -98,7 +98,7 @@ online_moves:
 #   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
 #   max_moves: 1                          # Max number of moves played from Lichess cloud eval. (Comment this line for max moves)
   chessdb:
-    enabled: true                        # Activate online moves from https://chessdb.cn/queryc_en/
+    enabled: false                        # Activate online moves from https://chessdb.cn/queryc_en/
     priority: 100                         # Priority with which this move source is used. Higher priority is used first.
     only_without_book: false              # Whether the chessdb should only be used if there is no matching book.
     min_candidates: 5                     # Minimum number of candidate moves.
